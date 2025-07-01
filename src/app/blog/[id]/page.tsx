@@ -11,13 +11,18 @@ interface Post {
 // If a request comes in for a path that hasn't been generated,
 // Next.js will server-render the page on-demand.
 export const dynamicParams = true; // or false, to 404 on unknown paths
+const url = "https://api.jsonbin.io/v3/b/68639f398a456b7966b958d6";
 
 export const revalidate = false;
 export async function generateStaticParams() {
-  const posts: Post[] = await fetch("https://api.vercel.app/blog").then(res =>
-    res.json(),
-  );
-  return posts.slice(0, 2).map(post => ({
+  const posts: { record: Post[] } = await fetch(url, {
+    headers: {
+      "Content-Type": "application/json",
+      "X-Master-Key":
+        "$2a$10$oq6asaZz8iPqzgDJxEnE3u3hmWqF8shY7jjEY7ZbFc/wKLUfqaIzO",
+    },
+  }).then(res => res.json());
+  return posts.record.map(post => ({
     id: String(post.id),
   }));
 }
@@ -30,16 +35,21 @@ export default async function Page({
 }) {
   const { id } = await params;
   console.log("request in!");
+  const posts: { record: Post[] } = await fetch(url, {
+    headers: {
+      "Content-Type": "application/json",
+      "X-Master-Key":
+        "$2a$10$oq6asaZz8iPqzgDJxEnE3u3hmWqF8shY7jjEY7ZbFc/wKLUfqaIzO",
+    },
+  }).then(res => res.json());
   const timeNow = new Date().toString();
-  const post: Post = await fetch(`https://api.vercel.app/blog/${id}`).then(
-    res => res.json(),
-  );
+  const post = posts.record.find(p => p.id.toString() === id);
 
   return (
     <main>
-      <h1>{post.title}</h1>
+      <h1>{post?.title}</h1>
       <h2>Time {timeNow}</h2>
-      <p>{post.content}</p>
+      <p>{post?.content}</p>
     </main>
   );
 }
