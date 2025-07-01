@@ -3,7 +3,6 @@ import { revalidatePath } from "next/cache";
 
 export async function GET(request: Request) {
   // Extract the path you want to invalidate from query parameters, for example
-  console.log("hey");
   const { searchParams } = new URL(request.url);
   const pathToRevalidate = searchParams.get("path");
 

@@ -10,10 +10,11 @@ interface Post {
 // We'll prerender only the params from `generateStaticParams` at build time.
 // If a request comes in for a path that hasn't been generated,
 // Next.js will server-render the page on-demand.
-export const dynamicParams = true; // or false, to 404 on unknown paths
 const url = "https://api.jsonbin.io/v3/b/68639f398a456b7966b958d6";
 
+export const dynamicParams = true; // or false, to 404 on unknown paths
 export const revalidate = false;
+export const dynamic = "error";
 export async function generateStaticParams() {
   const posts: { record: Post[] } = await fetch(url, {
     headers: {
@@ -34,7 +35,6 @@ export default async function Page({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  console.log("request in!");
   const posts: { record: Post[] } = await fetch(url, {
     headers: {
       "Content-Type": "application/json",
@@ -44,7 +44,7 @@ export default async function Page({
   }).then(res => res.json());
   const timeNow = new Date().toString();
   const post = posts.record.find(p => p.id.toString() === id);
-
+  if (!post) throw new Error();
   return (
     <main>
       <h1>{post?.title}</h1>
