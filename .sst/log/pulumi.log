@@ -1,0 +1,146 @@
+Updating (weilo):
+@ updating.....
+
+@ updating.........
+ ++ command:local:Command MyWebBuilder creating replacement (0s) [diff: ]
+@ updating.....
+ ++ command:local:Command MyWebBuilder creating replacement (1s) [diff: ]; Next.js version : 15.3.4
+ ++ command:local:Command MyWebBuilder creating replacement (1s) [diff: ]; OpenNext v3.6.5
+ ++ command:local:Command MyWebBuilder creating replacement (1s) [diff: ]; 
+ ++ command:local:Command MyWebBuilder creating replacement (1s) [diff: ]; ┌─────────────────────────────────┐
+ ++ command:local:Command MyWebBuilder creating replacement (1s) [diff: ]; │ OpenNext — Building Next.js app │
+ ++ command:local:Command MyWebBuilder creating replacement (1s) [diff: ]; └─────────────────────────────────┘
+ ++ command:local:Command MyWebBuilder creating replacement (1s) [diff: ]; 
+ ++ command:local:Command MyWebBuilder creating replacement (1s) [diff: ]; 
+ ++ command:local:Command MyWebBuilder creating replacement (1s) [diff: ]; > isr@0.1.0 build
+ ++ command:local:Command MyWebBuilder creating replacement (1s) [diff: ]; > next build
+ ++ command:local:Command MyWebBuilder creating replacement (1s) [diff: ]; 
+@ updating....
+ ++ command:local:Command MyWebBuilder creating replacement (2s) [diff: ];    ▲ Next.js 15.3.4
+ ++ command:local:Command MyWebBuilder creating replacement (2s) [diff: ]; 
+ ++ command:local:Command MyWebBuilder creating replacement (2s) [diff: ];    Creating an optimized production build ...
+@ updating........
+ ++ command:local:Command MyWebBuilder creating replacement (7s) [diff: ];  ✓ Compiled successfully in 2000ms
+ ++ command:local:Command MyWebBuilder creating replacement (7s) [diff: ];    Linting and checking validity of types ...
+@ updating.....
+ ++ command:local:Command MyWebBuilder creating replacement (9s) [diff: ];    Collecting page data ...
+@ updating....
+ ++ command:local:Command MyWebBuilder creating replacement (11s) [diff: ];    Generating static pages (0/9) ...
+@ updating....
+ ++ command:local:Command MyWebBuilder creating replacement (11s) [diff: ];    Generating static pages (2/9) 
+ ++ command:local:Command MyWebBuilder creating replacement (11s) [diff: ];    Generating static pages (4/9) 
+ ++ command:local:Command MyWebBuilder creating replacement (11s) [diff: ];    Generating static pages (6/9) 
+ ++ command:local:Command MyWebBuilder creating replacement (11s) [diff: ];  ✓ Generating static pages (9/9)
+@ updating....
+ ++ command:local:Command MyWebBuilder creating replacement (12s) [diff: ];    Finalizing page optimization ...
+ ++ command:local:Command MyWebBuilder creating replacement (12s) [diff: ];    Collecting build traces ...
+@ updating................
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; 
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; Route (app)                                 Size  First Load JS
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; ┌ ○ /                                    5.63 kB         107 kB
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; ├ ○ /_not-found                            142 B         101 kB
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; ├ ƒ /api                                   142 B         101 kB
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; └ ● /blog/[id]                             142 B         101 kB
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ];     ├ /blog/1
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ];     ├ /blog/2
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ];     └ /blog/3
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; + First Load JS shared by all             101 kB
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ];   ├ chunks/4bd1b696-67ee12fb04071d3b.js  53.2 kB
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ];   ├ chunks/684-42609a042cd3abcf.js       45.9 kB
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ];   └ other shared chunks (total)          1.89 kB
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; 
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; 
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; ○  (Static)   prerendered as static content
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; ●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; ƒ  (Dynamic)  server-rendered on demand
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; 
+@ updating....
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; 
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; ┌──────────────────────────────┐
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; │ OpenNext — Generating bundle │
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; └──────────────────────────────┘
+ ++ command:local:Command MyWebBuilder creating replacement (26s) [diff: ]; 
+ ++ command:local:Command MyWebBuilder creating replacement (27s) [diff: ]; Bundling middleware function...
+ ++ command:local:Command MyWebBuilder creating replacement (27s) [diff: ]; Bundling static assets...
+ ++ command:local:Command MyWebBuilder creating replacement (27s) [diff: ]; Bundling cache assets...
+@ updating....
+ ++ command:local:Command MyWebBuilder creating replacement (27s) [diff: ]; Building server function: default...
+@ updating........
+ ++ command:local:Command MyWebBuilder creating replacement (32s) [diff: ]; Applying code patches: 4.506s
+ ++ command:local:Command MyWebBuilder creating replacement (33s) [diff: ]; Bundling revalidation function...
+ ++ command:local:Command MyWebBuilder creating replacement (33s) [diff: ]; Bundling image optimization function...
+@ updating....
+ ++ command:local:Command MyWebBuilder creating replacement (33s) [diff: ]; Installing dependencies for image-optimization-function...
+@ updating......
+ ++ command:local:Command MyWebBuilder creating replacement (37s) [diff: ]; Dependencies installed for image-optimization-function
+ ++ command:local:Command MyWebBuilder creating replacement (37s) [diff: ]; Bundling warmer function...
+@ updating....
+ ++ command:local:Command MyWebBuilder creating replacement (37s) [diff: ]; OpenNext build complete.
+ ++ command:local:Command MyWebBuilder created replacement (37s) [diff: ]; OpenNext build complete.
+ +- command:local:Command MyWebBuilder replacing (0s) [diff: ]; OpenNext build complete.
+ +- command:local:Command MyWebBuilder replaced (0.00s) [diff: ]; OpenNext build complete.
+@ updating....
+ ~  pulumi-nodejs:dynamic:Resource MyWebAssetFiles.sst.aws.BucketFiles updating (0s) [diff: ~files]
+ ++ aws:s3:BucketObjectv2 MyWebRevalidationSeederCode creating replacement (0s) [diff: ~key,source]
+@ updating....
+ ++ aws:s3:BucketObjectv2 MyWebRevalidationEventsSubscriberKtcxcxFunctionCode creating replacement (0s) [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 MyWebRevalidationSeederCode created replacement (0.22s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 MyWebRevalidationSeederCode replacing (0s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 MyWebRevalidationSeederCode replaced (0.00s) [diff: ~key,source]
+ ~  aws:lambda:Function MyWebRevalidationSeederFunction updating (0s) [diff: ~s3Key]
+ ++ aws:s3:BucketObjectv2 MyWebRevalidationEventsSubscriberKtcxcxFunctionCode created replacement (0.09s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 MyWebRevalidationEventsSubscriberKtcxcxFunctionCode replacing (0s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 MyWebRevalidationEventsSubscriberKtcxcxFunctionCode replaced (0.00s) [diff: ~key,source]
+ ~  aws:lambda:Function MyWebRevalidationEventsSubscriberKtcxcxFunctionFunction updating (0s) [diff: ~s3Key]
+ ~  pulumi-nodejs:dynamic:Resource MyWebAssetFiles.sst.aws.BucketFiles updated (0.40s) [diff: ~files]
+@ updating.....
+ ++ aws:s3:BucketObjectv2 MyWebImageOptimizerCode creating replacement (0s) [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 MyWebServerApsoutheast1Code creating replacement (0s) [diff: ~key,source]
+@ updating....
+ ++ aws:s3:BucketObjectv2 MyWebImageOptimizerCode created replacement (1s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 MyWebImageOptimizerCode replacing (0s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 MyWebImageOptimizerCode replaced (0.00s) [diff: ~key,source]
+ ~  aws:lambda:Function MyWebImageOptimizerFunction updating (0s) [diff: ~s3Key]
+@ updating....
+ ++ aws:s3:BucketObjectv2 MyWebServerApsoutheast1Code created replacement (1s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 MyWebServerApsoutheast1Code replacing (0s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 MyWebServerApsoutheast1Code replaced (0.00s) [diff: ~key,source]
+ ~  aws:lambda:Function MyWebServerApsoutheast1Function updating (0s) [diff: ~s3Key]
+@ updating....
+ ~  aws:lambda:Function MyWebRevalidationSeederFunction updated (5s) [diff: ~s3Key]
+ ++ aws:lambda:Invocation MyWebRevalidationSeed creating replacement (0s) [diff: ~triggers]
+ ~  aws:lambda:Function MyWebRevalidationEventsSubscriberKtcxcxFunctionFunction updated (5s) [diff: ~s3Key]
+@ updating.....
+ ++ aws:lambda:Invocation MyWebRevalidationSeed created replacement (1s) [diff: ~triggers]
+ +- aws:lambda:Invocation MyWebRevalidationSeed replacing (0s) [diff: ~triggers]
+ +- aws:lambda:Invocation MyWebRevalidationSeed replaced (0.00s) [diff: ~triggers]
+@ updating.....
+ ~  aws:lambda:Function MyWebImageOptimizerFunction updated (5s) [diff: ~s3Key]
+@ updating....
+ ~  aws:lambda:Function MyWebServerApsoutheast1Function updated (5s) [diff: ~s3Key]
+ ~  pulumi-nodejs:dynamic:Resource MyWebInvalidation.sst.aws.DistributionInvalidation updating (0s) [diff: ~version]
+@ updating....
+ ~  pulumi-nodejs:dynamic:Resource MyWebInvalidation.sst.aws.DistributionInvalidation updated (1s) [diff: ~version]
+ -- aws:lambda:Invocation MyWebRevalidationSeed deleting original (0s) [diff: ~triggers]
+ -- aws:s3:BucketObjectv2 MyWebRevalidationEventsSubscriberKtcxcxFunctionCode deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 MyWebImageOptimizerCode deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 MyWebServerApsoutheast1Code deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 MyWebRevalidationSeederCode deleting original (0s) [diff: ~key,source]
+ -- command:local:Command MyWebBuilder deleting original (0s) [diff: ]; OpenNext build complete.
+ -- aws:lambda:Invocation MyWebRevalidationSeed deleted original (0.02s) [diff: ~triggers]
+ -- command:local:Command MyWebBuilder deleted original (0.07s) [diff: ]; OpenNext build complete.
+ -- aws:s3:BucketObjectv2 MyWebImageOptimizerCode deleted original (0.12s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 MyWebRevalidationEventsSubscriberKtcxcxFunctionCode deleted original (0.14s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 MyWebRevalidationSeederCode deleted original (0.14s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 MyWebServerApsoutheast1Code deleted original (0.14s) [diff: ~key,source]
+    pulumi:pulumi:Stack content-guide-poc-weilo  
+Outputs:
+    _protect: false
+
+Resources:
+    ~ 6 updated
+    +-6 replaced
+    12 changes. 36 unchanged
+
+Duration: 58s
+

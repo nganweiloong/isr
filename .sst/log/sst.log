@@ -1,0 +1,88 @@
+time=2025-07-02T15:11:22.864+08:00 level=INFO msg="checking for pulumi" path=/home/weilo/.config/sst/bin/pulumi
+time=2025-07-02T15:11:23.273+08:00 level=INFO msg="checking for bun" path=/home/weilo/.config/sst/bin/bun
+time=2025-07-02T15:11:23.295+08:00 level=INFO msg="initializing project" version=3.17.8
+time=2025-07-02T15:11:23.296+08:00 level=INFO msg="esbuild building" out=/home/weilo/codes/isr/.sst/platform/sst.config.1751440283295.mjs
+time=2025-07-02T15:11:23.307+08:00 level=INFO msg="esbuild built" outfile=/home/weilo/codes/isr/.sst/platform/sst.config.1751440283295.mjs
+time=2025-07-02T15:11:23.307+08:00 level=INFO msg="evaluating config"
+time=2025-07-02T15:11:23.337+08:00 level=INFO msg="config evaluated"
+time=2025-07-02T15:11:23.340+08:00 level=INFO msg="checking platform"
+time=2025-07-02T15:11:23.340+08:00 level=INFO msg="loading home"
+time=2025-07-02T15:11:23.342+08:00 level=INFO msg="aws credentials found" region=ap-southeast-1 profile=""
+time=2025-07-02T15:11:23.342+08:00 level=INFO msg="fetching bootstrap"
+time=2025-07-02T15:11:23.514+08:00 level=INFO msg="found existing bootstrap" data="{\"version\":5,\"asset\":\"sst-asset-kurfbberwvfw\",\"assetEcrRegistryId\":\"816069152776\",\"assetEcrUrl\":\"816069152776.dkr.ecr.ap-southeast-1.amazonaws.com/sst-asset\",\"state\":\"sst-state-kurfbberwvfw\",\"appsyncHttp\":\"\",\"appsyncRealtime\":\"\"}"
+time=2025-07-02T15:11:23.514+08:00 level=INFO msg="loaded config" app=content-guide-poc stage=weilo
+time=2025-07-02T15:11:23.515+08:00 level=INFO msg="initializing ui" isTTY=true
+time=2025-07-02T15:11:23.517+08:00 level=INFO msg="server port assigned" port=13557
+time=2025-07-02T15:11:23.518+08:00 level=INFO msg="running stack command" service=project.run cmd=deploy
+time=2025-07-02T15:11:23.518+08:00 level=INFO msg="INFO locking app=content-guide-poc stage=weilo"
+time=2025-07-02T15:11:23.518+08:00 level=INFO msg="INFO getting data key=lock app=content-guide-poc stage=weilo"
+time=2025-07-02T15:11:23.518+08:00 level=INFO msg=starting service=server
+time=2025-07-02T15:11:23.518+08:00 level=INFO msg=server service=server addr=0.0.0.0:13557
+time=2025-07-02T15:11:23.703+08:00 level=INFO msg="INFO putting update app=content-guide-poc stage=weilo"
+time=2025-07-02T15:11:23.784+08:00 level=INFO msg="INFO getting passphrase app=content-guide-poc stage=weilo"
+time=2025-07-02T15:11:23.889+08:00 level=INFO msg="INFO pulling state app=content-guide-poc stage=weilo out=/home/weilo/codes/isr/.sst/pulumi/fe6836062881815d1000f6b7/.pulumi/stacks/content-guide-poc/weilo.json"
+time=2025-07-02T15:11:24.334+08:00 level=INFO msg="got previous deployment" service=project.run updateID=fe6836062881815d1000f6b7
+time=2025-07-02T15:11:24.334+08:00 level=INFO msg="esbuild building" out=/home/weilo/codes/isr/.sst/platform/sst.config.1751440283888.mjs
+time=2025-07-02T15:11:24.467+08:00 level=INFO msg="esbuild built" outfile=/home/weilo/codes/isr/.sst/platform/sst.config.1751440283888.mjs
+time=2025-07-02T15:11:24.478+08:00 level=INFO msg="built sst.config.ts" service=project.run updateID=fe6836062881815d1000f6b7 to=/home/weilo/codes/isr/.sst/platform/sst.config.1751440283888.mjs
+time=2025-07-02T15:11:24.481+08:00 level=INFO msg="tracked files" service=project.run updateID=fe6836062881815d1000f6b7
+time=2025-07-02T15:11:24.481+08:00 level=INFO msg="INFO getting data key=secret app=content-guide-poc stage=_fallback"
+time=2025-07-02T15:11:24.481+08:00 level=INFO msg="INFO getting data key=secret app=content-guide-poc stage=weilo"
+time=2025-07-02T15:11:24.550+08:00 level=INFO msg="starting pulumi" service=project.run updateID=fe6836062881815d1000f6b7 args="[/home/weilo/.config/sst/bin/pulumi up --yes -f --stack organization/content-guide-poc/weilo --non-interactive --event-log /home/weilo/codes/isr/.sst/pulumi/fe6836062881815d1000f6b7/eventlog.json --config aws:region=ap-southeast-1 --config aws:defaultTags={\"tags\":{\"sst:app\":\"content-guide-poc\",\"sst:stage\":\"weilo\"}}]"
+time=2025-07-02T15:11:29.551+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:11:33.724+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:11:33.951+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:17.618+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:17.740+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:18.047+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:18.047+08:00 level=INFO msg="building function" runtime=nodejs20.x functionID=MyWebRevalidationSeeder
+time=2025-07-02T15:12:18.048+08:00 level=INFO msg="function built" runtime=nodejs20.x functionID=MyWebRevalidationSeeder
+time=2025-07-02T15:12:18.266+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:18.281+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:18.434+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:19.235+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:19.264+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:19.272+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:19.273+08:00 level=INFO msg="building function" runtime=nodejs20.x functionID=MyWebImageOptimizer
+time=2025-07-02T15:12:19.273+08:00 level=INFO msg="function built" runtime=nodejs20.x functionID=MyWebImageOptimizer
+time=2025-07-02T15:12:19.276+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:19.296+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:19.296+08:00 level=INFO msg="building function" runtime=nodejs20.x functionID=MyWebRevalidationEventsSubscriberKtcxcxFunction
+time=2025-07-02T15:12:19.296+08:00 level=INFO msg="function built" runtime=nodejs20.x functionID=MyWebRevalidationEventsSubscriberKtcxcxFunction
+time=2025-07-02T15:12:19.301+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:19.301+08:00 level=INFO msg="building function" runtime=nodejs20.x functionID=MyWebServerApsoutheast1
+time=2025-07-02T15:12:19.302+08:00 level=INFO msg="function built" runtime=nodejs20.x functionID=MyWebServerApsoutheast1
+time=2025-07-02T15:12:19.334+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:19.434+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:19.544+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:19.749+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:21.756+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:22.212+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:23.165+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:23.972+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:24.124+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:25.181+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:26.692+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:29.104+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:29.909+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:29.919+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:29.951+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:29.975+08:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-02T15:12:30.084+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:31.117+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:31.287+08:00 level=INFO msg="pulumi exited" service=project.run updateID=fe6836062881815d1000f6b7 err=<nil>
+time=2025-07-02T15:12:31.287+08:00 level=INFO msg="eof and exited" service=project.run updateID=fe6836062881815d1000f6b7 eofs=0
+time=2025-07-02T15:12:31.288+08:00 level=INFO msg="eof and exited" service=project.run updateID=fe6836062881815d1000f6b7 eofs=1
+time=2025-07-02T15:12:31.288+08:00 level=INFO msg="breaking out of tail loop" service=project.run updateID=fe6836062881815d1000f6b7
+time=2025-07-02T15:12:31.288+08:00 level=INFO msg="parsing state" service=project.run updateID=fe6836062881815d1000f6b7
+time=2025-07-02T15:12:31.315+08:00 level=INFO msg="INFO pushing partial state updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:31.434+08:00 level=INFO msg="generating types" root=/home/weilo/codes/isr
+time=2025-07-02T15:12:31.435+08:00 level=INFO msg="canceling partial" service=project.run updateID=fe6836062881815d1000f6b7
+time=2025-07-02T15:12:31.435+08:00 level=INFO msg="waiting for partial to exit" service=project.run updateID=fe6836062881815d1000f6b7
+time=2025-07-02T15:12:31.526+08:00 level=INFO msg="INFO pushing eventlog updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:31.527+08:00 level=INFO msg="INFO pushing snapshot updateID=fe6836062881815d1000f6b7"
+time=2025-07-02T15:12:31.852+08:00 level=INFO msg="INFO putting update app=content-guide-poc stage=weilo"
+time=2025-07-02T15:12:31.931+08:00 level=INFO msg="done running stack command" service=project.run updateID=fe6836062881815d1000f6b7 resources=52
+time=2025-07-02T15:12:31.932+08:00 level=INFO msg="INFO unlocking app=content-guide-poc stage=weilo"
+time=2025-07-02T15:12:32.014+08:00 level=INFO msg="shutting down server" service=server
+time=2025-07-02T15:12:32.014+08:00 level=INFO msg="server done" service=server
