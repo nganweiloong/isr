@@ -14,8 +14,10 @@ const url = "https://api.jsonbin.io/v3/b/68639f398a456b7966b958d6";
 
 export const dynamicParams = true; // or false, to 404 on unknown paths
 export const revalidate = false;
-export const dynamic = "error";
+export const dynamic = "force-static";
+
 export async function generateStaticParams() {
+  // return [];
   const posts: { record: Post[] } = await fetch(url, {
     headers: {
       "Content-Type": "application/json",
@@ -45,6 +47,7 @@ export default async function Page({
   const timeNow = new Date().toString();
   const post = posts.record.find(p => p.id.toString() === id);
   if (!post) throw new Error();
+
   return (
     <main>
       <h1>{post?.title}</h1>
