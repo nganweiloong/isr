@@ -47,7 +47,7 @@ export default async function Page({
   const timeNow = new Date().toString();
   const post = posts.record.find(p => p.id.toString() === id);
   if (!post) throw new Error();
-
+  console.log("REQUEST IN !!!");
   return (
     <main>
       <h1>{post?.title}</h1>
