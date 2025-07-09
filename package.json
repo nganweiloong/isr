@@ -5,6 +5,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev --turbopack",
+    "build:sst": "npx @opennextjs/aws build",
     "lint": "next lint",
     "start": "next start"
   },
@@ -17,6 +18,7 @@
     "sst": "3.17.8"
   },
   "devDependencies": {
+    "@opennextjs/aws": "^3.7.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
